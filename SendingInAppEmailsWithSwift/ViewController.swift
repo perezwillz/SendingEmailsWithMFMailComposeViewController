@@ -30,7 +30,33 @@ class ViewController: UIViewController {
         
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
-        com
+        composer.setToRecipients([EmailReturn.perez.rawValue])
+        composer.setSubject(EmailReturn.userReport.rawValue)
+        composer.setMessageBody("Hello I have the following questions or reports about the AfterTax app", isHTML: false)
+        
+        present(composer, animated: true)
+        
     }
 }
 
+extension ViewController : MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        if let _ = error {
+            controller.dismiss(animated: true)
+            return
+        }
+        
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .failed:
+            print("Failed")
+        case .saved:
+            print("Saved")
+        case .sent:
+            print("Email Sent")
+        }
+        
+        controller.dismiss(animated: true)
+    }
+}

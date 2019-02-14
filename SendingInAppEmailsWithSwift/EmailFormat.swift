@@ -11,4 +11,5 @@ import Foundation
 enum EmailReturn : String {
     case perez = "Ebukaperez@gmail.com"
     case gregory = "gregoryOmoma@gmail.com"
+    case userReport = "User Report"
 }
