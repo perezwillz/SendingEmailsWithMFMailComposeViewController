@@ -14,6 +14,7 @@
 		7E5433372216163600D5EAB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5433352216163600D5EAB3 /* LaunchScreen.storyboard */; };
 		7E5433422216163600D5EAB3 /* SendingInAppEmailsWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5433412216163600D5EAB3 /* SendingInAppEmailsWithSwiftTests.swift */; };
 		7E54334D2216163600D5EAB3 /* SendingInAppEmailsWithSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54334C2216163600D5EAB3 /* SendingInAppEmailsWithSwiftUITests.swift */; };
+		7E54335B22161FEB00D5EAB3 /* EmailFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54335A22161FEB00D5EAB3 /* EmailFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7E5433482216163600D5EAB3 /* SendingInAppEmailsWithSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendingInAppEmailsWithSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E54334C2216163600D5EAB3 /* SendingInAppEmailsWithSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingInAppEmailsWithSwiftUITests.swift; sourceTree = "<group>"; };
 		7E54334E2216163600D5EAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E54335A22161FEB00D5EAB3 /* EmailFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFormat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7E54332C2216163300D5EAB3 /* AppDelegate.swift */,
+				7E54335A22161FEB00D5EAB3 /* EmailFormat.swift */,
 				7E54332E2216163300D5EAB3 /* ViewController.swift */,
 				7E5433302216163300D5EAB3 /* Main.storyboard */,
 				7E5433332216163600D5EAB3 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E54335B22161FEB00D5EAB3 /* EmailFormat.swift in Sources */,
 				7E54332F2216163300D5EAB3 /* ViewController.swift in Sources */,
 				7E54332D2216163300D5EAB3 /* AppDelegate.swift in Sources */,
 			);

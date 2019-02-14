@@ -18,12 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="envelope-2" translatesAutoresizingMaskIntoConstraints="NO" id="lif-tb-cRa">
-                                <rect key="frame" x="93" y="230" width="189" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMD-Dd-xLu">
+                                <rect key="frame" x="45" y="695" width="284" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="GAk-JZ-nb7"/>
+                                    <constraint firstAttribute="width" constant="284" id="zz3-fU-lxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="27"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxD-au-9t0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope-2" translatesAutoresizingMaskIntoConstraints="NO" id="lif-tb-cRa">
+                                <rect key="frame" x="63" y="246" width="248" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="QqO-K4-LFP"/>
+                                    <constraint firstAttribute="height" constant="222" id="aoV-n8-zp3"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GMD-Dd-xLu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="57s-c7-4RT"/>
+                            <constraint firstItem="lif-tb-cRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="202" id="86O-BM-trZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GMD-Dd-xLu" secondAttribute="bottom" constant="25" id="GsP-VV-lWw"/>
+                            <constraint firstItem="lif-tb-cRa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lqv-9m-j1G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
